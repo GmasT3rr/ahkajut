@@ -1,0 +1,12 @@
+<div class="container mt-5">
+    <h1>
+        El resgistro deberia hacerse contra algo, lo dejo vacio. Pongo un "input" nombre de usuario
+    </h1>
+    <div class="text-center mt-5">
+        <h5>Ingrese su nombre de usuario</h5>
+        <input #user type="text" class="form-control ">
+        <div class="text-center">
+            <button (click)="guardarUsuario()" routerLink="/crear-Quiz" class="btn btn-primary justify-content-between">Guardar nombre y empezar</button>
+        </div>
+    </div>
+</div>

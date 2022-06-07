@@ -1,0 +1,162 @@
+<div class="container text-center mt-5">
+    <h5>Actualmente no disponible</h5>
+    <div class="btn btn-danger" routerLink="/home">
+        Volver
+    </div>
+</div>
+
+<!-- <nav class="navbar-expand bg-light">
+
+    <div class="container navbar bg-light ">
+        <div>
+            <ul class="navbar-nav mr-auto ">
+                <a class="logOut btn btn-block btn-danger disabled" routerLink="">Salir</a>
+            </ul>
+        </div>
+
+        <div class="d-flex">
+            <button class="btn btn-block btn-primary disabled">Hecho</button>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container p-4">
+    <div class="text-center">
+        <h2>Empieza a crear tu propio Quiz</h2>
+    </div>
+
+    <form [formGroup]="quiz" (ngSubmit)="onSubmit()" #form="ngForm">
+        <div class="row mt-5">
+            <div class="col-12 mt-5">
+                <div class="row justify-content-center">
+                    <h5>TITULO</h5>
+                    <input disabled="true" type="text" class="text-center" data-bs-toggle="modal" data-bs-target="#modalTitulo" placeholder="{{quiz.value.titulo}}">
+                    <div class="modal fade" id="modalTitulo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Ingrese un titulo</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" class="text-center form-control" formControlName="titulo" placeholder="---">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-6 mt-5">
+                <div class="row justify-content-center">
+                    <h5>Respuesta 1</h5>
+                    <input disabled="true" type="text" class="text-center" data-bs-toggle="modal" data-bs-target="#modalP1" placeholder="{{quiz.value.respuesta1}}">
+                    <div class="modal fade" id="modalP1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Ingrese una respuesta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" class="text-center form-control" formControlName="respuesta1" placeholder="Respuesta 1">
+                                </div>
+                                <div class="modal-footer">
+                                    <button (click)="guardarRes1()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mt-5">
+                <div class="row justify-content-center">
+                    <h5>Respuesta 2</h5>
+                    <input disabled="true" type="text" class="text-center" data-bs-toggle="modal" data-bs-target="#modalP2" placeholder="{{quiz.value.respuesta2}}">
+                    <div class="modal fade" id="modalP2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Ingrese una respuesta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" class="text-center form-control" formControlName="respuesta2" placeholder="Respuesta 2">
+                                </div>
+                                <div class="modal-footer">
+                                    <button (click)="guardarRes2()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center">
+                    <h5>Respuesta 3</h5>
+                    <input disabled="true" type="text" class="text-center" data-bs-toggle="modal" data-bs-target="#modalP3" placeholder="{{quiz.value.respuesta3}}">
+                    <div class="modal fade" id="modalP3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Ingrese una respuesta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" class="text-center form-control" formControlName="respuesta3" placeholder="Respuesta 3">
+                                </div>
+                                <div class="modal-footer">
+                                    <button (click)="guardarRes3()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center">
+                    <h5>Respuesta 4</h5>
+                    <input disabled="true" type="text" class="text-center" data-bs-toggle="modal" data-bs-target="#modalP4" placeholder="{{quiz.value.respuesta4}}">
+                    <div class="modal fade" id="modalP4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Ingrese una respuesta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" class="text-center form-control" formControlName="respuesta4" placeholder="Respuesta 4">
+                                </div>
+                                <div class="modal-footer">
+                                    <button (click)="guardarRes4()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <select id="respCorrecta" formControlName="respCorrecta" class="form-control ng-untouched ng-pristine ng-invalid">
+            <option   disabled="" selected="">Seleccione la respuesta correcta</option>
+            <option *ngFor="let res of respuestas" [ngValue]="res" >{{res}}</option>
+        </select>
+    </form>
+
+
+    <div class="text-center mt-5">
+        <button type="submit" (click)="guardarQuiz()" class="btn btn-danger">
+            GuardarQuiz
+        </button>
+    </div>
+
+    <div class="text-center mt-5">
+        <button type="submit" (click)="verRespuestas()" class="btn btn-danger">
+            verRespuestas
+        </button>
+    </div>
+</div> -->

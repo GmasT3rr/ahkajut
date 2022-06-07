@@ -1,0 +1,176 @@
+{
+    "preguntas": [{
+            "pregText": "¿Cuando nació San Martin?",
+            "opciones": [{
+                    "text": "25 de febrero de 1778",
+                    "correct": true
+                },
+                {
+                    "text": "25 de febrero de 1800"
+                },
+                {
+                    "text": "25 de febrero de 1810"
+                },
+                {
+                    "text": "25 de febrero de 1820"
+
+                }
+            ],
+            "explicacion": "José de San Martin nació un 25 de febrero de 1778 en Yapeyú"
+        },
+        {
+            "pregText": "¿Cuando nació Sócrates?",
+            "opciones": [{
+                    "text": "Año 500 AC"
+                },
+                {
+                    "text": "Año 470 AC",
+                    "correct": true
+
+                },
+                {
+                    "text": "Año 470 DC"
+                },
+                {
+                    "text": "Año 490 AC"
+
+                }
+            ],
+            "explicacion": "Sócrates de Atenea nació en Atenas en el aó 470 o 469 AC"
+        },
+        {
+            "pregText": "¿Cuando nació Manuel Belgrano?",
+            "opciones": [{
+                    "text": "3 de junio de 1770",
+                    "correct": true
+                },
+                {
+                    "text": "25 de febrero de 1800"
+                },
+                {
+                    "text": "3 de junio de 1810"
+                },
+                {
+                    "text": "7 de marzo de 1820"
+
+                }
+            ],
+            "explicacion": "Manuel Belgrano nació un 3 de junio de 1770"
+        },
+        {
+            "pregText": "¿Cuando nació Juan Manuel de Rosas?",
+            "opciones": [{
+                    "text": "30 de marzo de 1793",
+                    "correct": true
+                },
+                {
+                    "text": "25 de febrero de 1800"
+                },
+                {
+                    "text": "30 de marzo de 1900"
+                },
+                {
+                    "text": "1 de febrero de 1820"
+
+                }
+            ],
+            "explicacion": "Juan Manuel de Rosas nació un 30 de marzo de 1793 en Buenos Aires"
+        },
+        {
+            "pregText": "¿Cuando nació San Martin?",
+            "opciones": [{
+                    "text": "25 de febrero de 1778",
+                    "correct": true
+                },
+                {
+                    "text": "25 de febrero de 1800"
+                },
+                {
+                    "text": "25 de febrero de 1810"
+                },
+                {
+                    "text": "25 de febrero de 1820"
+
+                }
+            ],
+            "explicacion": "José de San Martin nació un 25 de febrero de 1778 en Yapeyú"
+        },
+        {
+            "pregText": "¿cuanto es 2x2?",
+            "opciones": [{
+                    "text": "4",
+                    "correct": true
+                },
+                {
+                    "text": "3"
+                },
+                {
+                    "text": "2"
+                },
+                {
+                    "text": "6"
+
+                }
+            ],
+            "explicacion": "2x2 da un total de 4"
+        },
+        {
+            "pregText": "¿cuanto es 2x3?",
+            "opciones": [{
+                    "text": "6",
+                    "correct": true
+                },
+                {
+                    "text": "2"
+                },
+                {
+                    "text": "7"
+                },
+                {
+                    "text": "4"
+
+                }
+            ],
+            "explicacion": "2x3 da un total de 6"
+        },
+        {
+            "pregText": "¿cuanto es 2x8?",
+            "opciones": [{
+                    "text": "16",
+                    "correct": true
+                },
+                {
+                    "text": "11"
+                },
+                {
+                    "text": "61"
+                },
+                {
+                    "text": "1"
+
+                }
+            ],
+            "explicacion": "2x8 da un total de 16"
+        },
+        {
+            "pregText": "¿cuanto es 10x10?",
+            "opciones": [{
+                    "text": "100",
+                    "correct": true
+                },
+                {
+                    "text": "10"
+                },
+                {
+                    "text": "15"
+                },
+                {
+                    "text": "1000"
+
+                }
+            ],
+            "explicacion": "10x10 da un total de 100"
+        }
+
+    ]
+}
